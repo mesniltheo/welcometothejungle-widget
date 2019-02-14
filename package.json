@@ -18,6 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "coverage": "yarn test -- --coverage",
+    "deploy": "yarn build && now build --name welcometothejungle-widget",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
