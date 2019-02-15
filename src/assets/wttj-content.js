@@ -2,9 +2,9 @@ import logoCompany from "./logo-wttj.png";
 
 export const config = {
   company: {
-    name: "Welcome to the jungle",
-    url: "wttj",
-    logo: logoCompany
+    id: "wttj",
+    logo: logoCompany,
+    name: "Welcome to the jungle"
   },
   content: [
     {

@@ -9,13 +9,13 @@ import * as S from "./styled";
 class Widget extends PureComponent {
   render() {
     const { company } = content;
-    const { url, logo, name } = company;
+    const { id, logo, name } = company;
 
     return (
       <S.Wrapper>
         <Header logo={logo} name={name} />
         <h1>let's go !</h1>
-        <Footer link={url} />
+        <Footer id={id} />
       </S.Wrapper>
     );
   }

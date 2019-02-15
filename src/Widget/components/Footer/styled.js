@@ -7,11 +7,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   padding: 0 10px;
   width: 100%;
-  height: 50px;
+  height: 40px;
+  box-sizing: border-box;
   background: ${colors.black};
-`;
-
-export const PoweredBy = styled.a`
-  display: flex;
-  align-items: center;
 `;

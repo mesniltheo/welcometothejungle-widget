@@ -1,15 +1,30 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import Button from "./../../../components/Button";
+import Center from "./../../../components/Center";
+
 import * as S from "./styled";
 
-const Header = ({ logo, name }) => {
+const Header = ({ handleNextClick, handlePrevClick, logo, name }) => {
   return (
     <S.Wrapper>
-      <S.Company>
+      <Center>
         <S.Logo src={logo} alt={`${name} logo`} />
         {name}
-      </S.Company>
+      </Center>
+      <Center>
+        <div>
+          <Button iconName="arrowLeft" onClick={handlePrevClick} color="grey" />
+        </div>
+        <S.Next>
+          <Button
+            iconName="arrowRight"
+            onClick={handleNextClick}
+            color="grey"
+          />
+        </S.Next>
+      </Center>
     </S.Wrapper>
   );
 };

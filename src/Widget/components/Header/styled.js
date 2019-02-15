@@ -9,14 +9,15 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 50px;
   background: ${colors.green};
-`;
-
-export const Company = styled.div`
-  display: flex;
-  align-items: center;
+  font-weight: 700;
+  box-sizing: border-box;
 `;
 
 export const Logo = styled.img`
   max-height: 40px;
   margin-right: 10px;
+`;
+
+export const Next = styled.div`
+  margin-left: 5px;
 `;

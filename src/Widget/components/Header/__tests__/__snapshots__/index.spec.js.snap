@@ -1,19 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render the component correctly 1`] = `
-.c0 {
+.c4 {
+  display: inline-block;
+  line-height: 1;
+  height: 25px;
+}
+
+.c4 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.c4 path {
+  -webkit-transition: fill 300ms;
+  transition: fill 300ms;
+}
+
+.c4 svg {
+  width: 25px;
+  height: 25px;
+}
+
+.c4 svg path {
+  fill: #fff;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0 10px;
-  width: 100%;
-  height: 50px;
-  background: #00c29a;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 30px;
+  background: #4b4d55;
+  color: #fff;
+  font-size: 14px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.c3:hover {
+  background: #66686e;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: "10px";
 }
 
 .c1 {
@@ -27,9 +81,30 @@ exports[`should render the component correctly 1`] = `
   align-items: center;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 100%;
+  height: 50px;
+  background: #00c29a;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
 .c2 {
   max-height: 40px;
   margin-right: 10px;
+}
+
+.c6 {
+  margin-left: 5px;
 }
 
 <div
@@ -44,6 +119,70 @@ exports[`should render the component correctly 1`] = `
       src="http://lorem.dolor/logo.png"
     />
     wttj
+  </div>
+  <div
+    className="c1"
+  >
+    <div>
+      <button
+        className="c3"
+        color="grey"
+        onClick={[Function]}
+      >
+        <span
+          className="c4"
+          color="white"
+          size="25"
+        >
+          <svg
+            aria-labelledby="title"
+            height="1em"
+            role="img"
+            title="arrowLeft"
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <path
+              d="M14.71 15.88L10.83 12l3.88-3.88a.996.996 0 1 0-1.41-1.41L8.71 11.3a.996.996 0 0 0 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .38-.39.39-1.03 0-1.42z"
+            />
+          </svg>
+        </span>
+        <span
+          className="c5"
+        />
+      </button>
+    </div>
+    <div
+      className="c6"
+    >
+      <button
+        className="c3"
+        color="grey"
+        onClick={[Function]}
+      >
+        <span
+          className="c4"
+          color="white"
+          size="25"
+        >
+          <svg
+            aria-labelledby="title"
+            height="1em"
+            role="img"
+            title="arrowRight"
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <path
+              d="M9.29 15.88L13.17 12 9.29 8.12a.996.996 0 1 1 1.41-1.41l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3a.996.996 0 0 1-1.41 0c-.38-.39-.39-1.03 0-1.42z"
+            />
+          </svg>
+        </span>
+        <span
+          className="c5"
+        />
+      </button>
+    </div>
   </div>
 </div>
 `;
