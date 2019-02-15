@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Button should render the button 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 4px;
+  background: #00c29a;
+  color: #fff;
+  font-size: 14px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.c0:hover {
+  background: #37cbaa;
+}
+
+<button
+  className="c0"
+  color="green"
+  onClick={[Function]}
+>
+  <div>
+    Click me
+  </div>
+</button>
+`;
+
+exports[`Button Link should render the link button 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 4px;
+  background: #00c29a;
+  color: #fff;
+  font-size: 14px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.c0:hover {
+  background: #37cbaa;
+}
+
+<a
+  className="c0"
+  color="green"
+  href="http://www.test.com"
+>
+  <div>
+    Click me
+  </div>
+</a>
+`;
+
+exports[`Button Link should render the link button with blank 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 4px;
+  background: #00c29a;
+  color: #fff;
+  font-size: 14px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.c0:hover {
+  background: #37cbaa;
+}
+
+<a
+  className="c0"
+  color="green"
+  href="http://www.test.com"
+  rel="noopenner noreferrer"
+  target="_blank"
+>
+  <div>
+    Click me
+  </div>
+</a>
+`;
