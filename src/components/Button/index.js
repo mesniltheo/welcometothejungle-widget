@@ -51,7 +51,7 @@ export default class Button extends PureComponent {
 
     return (
       <S.Wrapper {...getProps} color={color} onlyIcon={onlyIcon} size={size}>
-        {iconName && <Icon name={iconName} size="25" color="white" />}
+        {iconName && <Icon name={iconName} size="20" color="white" />}
         {iconName ? <S.Text>{children}</S.Text> : children}
       </S.Wrapper>
     );
