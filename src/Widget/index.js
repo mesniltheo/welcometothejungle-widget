@@ -1,18 +1,24 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { PureComponent } from "react";
 
-const TestingStyledComponent = styled.h1`
-  color: #00c29a;
-`;
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
-class App extends Component {
+import content from "./../assets/wttj-content";
+import * as S from "./styled";
+
+class Widget extends PureComponent {
   render() {
+    const { company } = content;
+    const { url, logo, name } = company;
+
     return (
-      <div>
-        <TestingStyledComponent>let's go !</TestingStyledComponent>
-      </div>
+      <S.Wrapper>
+        <Header logo={logo} name={name} />
+        <h1>let's go !</h1>
+        <Footer link={url} />
+      </S.Wrapper>
     );
   }
 }
 
-export default App;
+export default Widget;

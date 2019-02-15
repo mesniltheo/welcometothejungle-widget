@@ -2,7 +2,7 @@ import { Normalize } from "styled-normalize";
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Widget from "./Widget/";
+import Widget from "./Widget";
 import * as serviceWorker from "./serviceWorker";
 
 // add styled-normalize to reset dom css

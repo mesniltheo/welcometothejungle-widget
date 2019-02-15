@@ -14,6 +14,7 @@ class Icon extends PureComponent {
   static propTypes = {
     color: PropTypes.string,
     name: PropTypes.oneOf(NAMES).isRequired,
+    // size in pixel
     size: PropTypes.string
   };
 
