@@ -5,9 +5,7 @@ import PropTypes from "prop-types";
 import React, { PureComponent } from "react";
 
 import Icons from "./icons-components/";
-
 import { NAMES } from "./constants";
-
 import * as S from "./styled";
 
 class Icon extends PureComponent {
@@ -20,7 +18,7 @@ class Icon extends PureComponent {
 
   getIcon(name, title) {
     const iconProps = {
-      // accessibility
+      // for accessibility
       title: name,
       role: "img",
       "aria-labelledby": "title"

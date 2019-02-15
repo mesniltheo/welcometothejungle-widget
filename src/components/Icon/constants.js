@@ -1,7 +1,7 @@
 export const NAMES = [
   "arrowLeft",
   "arrowRight",
-  "cancel",
+  "close",
   "logo",
   "picture",
   "play",
