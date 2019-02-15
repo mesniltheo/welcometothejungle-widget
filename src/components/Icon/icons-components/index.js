@@ -1,15 +1,27 @@
 import PropTypes from "prop-types";
 import React, { PureComponent } from "react";
 
+import ArrowLeft from "./ArrowLeft";
+import ArrowRight from "./ArrowRight";
+import Cancel from "./Cancel";
 import Logo from "./Logo";
+import Picture from "./Picture";
+import Play from "./Play";
+import Quote from "./Quote";
 
-class Icons extends PureComponent {
+class Icon extends PureComponent {
   static propTypes = {
     tag: PropTypes.string.isRequired
   };
 
   components = {
-    Logo
+    ArrowLeft,
+    ArrowRight,
+    Cancel,
+    Logo,
+    Picture,
+    Play,
+    Quote
   };
 
   render() {
@@ -21,4 +33,4 @@ class Icons extends PureComponent {
     return this.props.tag ? <TagName {...finalProps} /> : undefined;
   }
 }
-export default Icons;
+export default Icon;
