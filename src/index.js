@@ -7,11 +7,28 @@ import Widget from "./Widget";
 
 import * as serviceWorker from "./serviceWorker";
 
-// add styled-normalize to reset dom css
+// function to get params from url for the demo
+function getParams(location) {
+  const searchParams = new URLSearchParams(location.search);
+  return {
+    columns: searchParams.get("columns") || undefined,
+    rows: searchParams.get("rows") || undefined
+  };
+}
+// set values on constant
+const columns = getParams(window.location).columns;
+const rows = getParams(window.location).rows;
+
 ReactDOM.render(
   <React.Fragment>
+    {/* add styled-normalize to reset dom css */}
     <Normalize />
-    <Widget company={wttjContent.company} content={wttjContent.content} />
+    <Widget
+      columns={columns && Number(columns)}
+      company={wttjContent.company}
+      content={wttjContent.content}
+      rows={rows && Number(rows)}
+    />
   </React.Fragment>,
   document.getElementById("root")
 );

@@ -9,8 +9,15 @@ import * as S from "./styled";
 
 class Widget extends PureComponent {
   static propTypes = {
+    columns: PropTypes.number,
     company: PropTypes.object.isRequired,
-    content: PropTypes.array.isRequired
+    content: PropTypes.array.isRequired,
+    rows: PropTypes.number
+  };
+
+  static defaultProps = {
+    columns: 3,
+    rows: 2
   };
 
   render() {
@@ -20,7 +27,6 @@ class Widget extends PureComponent {
     return (
       <S.Wrapper>
         <Header logo={logo} name={name} />
-        <h1>let's go !</h1>
         <ProgressBar progress={50} />
         <Footer id={id} />
       </S.Wrapper>

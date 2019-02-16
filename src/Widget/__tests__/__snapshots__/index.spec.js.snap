@@ -276,9 +276,6 @@ exports[`should render the component correctly 1`] = `
       </div>
     </div>
   </div>
-  <h1>
-    let's go !
-  </h1>
   <div
     className="c8"
   >
