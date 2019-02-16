@@ -1,15 +1,20 @@
+import PropTypes from "prop-types";
 import React, { PureComponent } from "react";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ProgressBar from "./../components/ProgressBar";
 
-import content from "./../assets/wttj-content";
 import * as S from "./styled";
 
 class Widget extends PureComponent {
+  static propTypes = {
+    company: PropTypes.object.isRequired,
+    content: PropTypes.array.isRequired
+  };
+
   render() {
-    const { company } = content;
+    const { company } = this.props;
     const { id, logo, name } = company;
 
     return (

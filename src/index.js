@@ -2,14 +2,16 @@ import { Normalize } from "styled-normalize";
 import React from "react";
 import ReactDOM from "react-dom";
 
+import wttjContent from "./assets/wttj-content";
 import Widget from "./Widget";
+
 import * as serviceWorker from "./serviceWorker";
 
 // add styled-normalize to reset dom css
 ReactDOM.render(
   <React.Fragment>
     <Normalize />
-    <Widget />
+    <Widget company={wttjContent.company} content={wttjContent.content} />
   </React.Fragment>,
   document.getElementById("root")
 );
