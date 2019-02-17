@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 import Button from "./../../../components/Button";
@@ -40,5 +41,9 @@ const Content = ({ item }) => (
     </S.Content>
   </S.Wrapper>
 );
+
+Content.propTypes = {
+  item: PropTypes.object.isRequired
+};
 
 export default Content;
