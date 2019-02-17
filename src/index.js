@@ -20,7 +20,7 @@ const columns = getParams(window.location).columns;
 const rows = getParams(window.location).rows;
 
 ReactDOM.render(
-  <React.Fragment>
+  <div style={{ width: "100%", height: "100%", position: "absolute" }}>
     {/* add styled-normalize to reset dom css */}
     <Normalize />
     <Widget
@@ -29,7 +29,7 @@ ReactDOM.render(
       content={wttjContent.content}
       rows={rows && Number(rows)}
     />
-  </React.Fragment>,
+  </div>,
   document.getElementById("root")
 );
 
