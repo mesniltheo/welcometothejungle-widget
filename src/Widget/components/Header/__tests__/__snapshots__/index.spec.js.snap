@@ -50,12 +50,16 @@ exports[`should render the component correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
+  -webkit-transition: background 300ms ease-in-out,opacity 300ms;
+  transition: background 300ms ease-in-out,opacity 300ms;
 }
 
-.c3:hover {
+.c3:hover:enabled {
   background: #66686e;
+}
+
+.c3:disabled {
+  opacity: 0.3;
 }
 
 .c5 {
@@ -127,6 +131,7 @@ exports[`should render the component correctly 1`] = `
       <button
         className="c3"
         color="grey"
+        disabled={false}
         onClick={[Function]}
       >
         <span
@@ -158,6 +163,7 @@ exports[`should render the component correctly 1`] = `
       <button
         className="c3"
         color="grey"
+        disabled={true}
         onClick={[Function]}
       >
         <span

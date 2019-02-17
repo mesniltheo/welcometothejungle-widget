@@ -6,7 +6,7 @@ import Center from "./../../../components/Center";
 
 import * as S from "./styled";
 
-const Header = ({ handleNextClick, handlePrevClick, logo, name }) => {
+const Header = ({ handleNext, handlePrev, logo, name, step, maxStep }) => {
   return (
     <S.Wrapper>
       <Center>
@@ -15,13 +15,19 @@ const Header = ({ handleNextClick, handlePrevClick, logo, name }) => {
       </Center>
       <Center>
         <div>
-          <Button iconName="arrowLeft" onClick={handlePrevClick} color="grey" />
+          <Button
+            iconName="arrowLeft"
+            onClick={handlePrev}
+            color="grey"
+            disabled={step === 0}
+          />
         </div>
         <S.Next>
           <Button
             iconName="arrowRight"
-            onClick={handleNextClick}
+            onClick={handleNext}
             color="grey"
+            disabled={step === maxStep}
           />
         </S.Next>
       </Center>
@@ -30,8 +36,12 @@ const Header = ({ handleNextClick, handlePrevClick, logo, name }) => {
 };
 
 Header.propTypes = {
+  handleNext: PropTypes.func,
+  handlePrev: PropTypes.func,
   logo: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  step: PropTypes.number,
+  maxStep: PropTypes.number
 };
 
 export default Header;
