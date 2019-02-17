@@ -3,7 +3,6 @@ import React, { PureComponent } from "react";
 
 import ArrowLeft from "./ArrowLeft";
 import ArrowRight from "./ArrowRight";
-import Close from "./Close";
 import Logo from "./Logo";
 import Picture from "./Picture";
 import Play from "./Play";
@@ -17,7 +16,6 @@ class Icon extends PureComponent {
   components = {
     ArrowLeft,
     ArrowRight,
-    Close,
     Logo,
     Picture,
     Play,
