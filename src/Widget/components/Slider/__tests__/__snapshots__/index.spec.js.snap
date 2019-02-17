@@ -1,0 +1,1148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the component correctly 1`] = `
+.c13 {
+  display: inline-block;
+  line-height: 1;
+  height: 20px;
+}
+
+.c13 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.c13 path {
+  -webkit-transition: fill 300ms;
+  transition: fill 300ms;
+}
+
+.c13 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c13 svg path {
+  fill: #fff;
+}
+
+.c23 {
+  display: inline-block;
+  line-height: 1;
+  height: 40px;
+}
+
+.c23 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.c23 path {
+  -webkit-transition: fill 300ms;
+  transition: fill 300ms;
+}
+
+.c23 svg {
+  width: 40px;
+  height: 40px;
+}
+
+.c23 svg path {
+  fill: #00c29a;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 30px;
+  background: #00c29a;
+  color: #fff;
+  font-size: 14px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: background 300ms ease-in-out,opacity 300ms;
+  transition: background 300ms ease-in-out,opacity 300ms;
+}
+
+.c12:hover:enabled {
+  background: #37cbaa;
+}
+
+.c12:disabled {
+  opacity: 0.3;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: "10px";
+}
+
+.c7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.c6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://cdn.welcometothejungle.co/uploads/video/image/1480/151603/small_wttj_video_0679859b-6e84-4549-bbc4-1330eddcac57.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.c16 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://cdn.welcometothejungle.co/uploads/image/file/7269/151601/small_wttj-annonces_583853d2-7b7d-4827-beb6-005c9c814df7.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.c18 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://cdn.welcometothejungle.co/uploads/image/file/7220/151601/small_wttj-annonces_fde76898-d6a4-4540-af78-f26ec06ba201.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.c19 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.c24 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://cdn.welcometothejungle.co/uploads/image/file/7252/151601/small_wttj-jobs_b3bbd3a7-0c09-403a-a446-9f29d0b09c3f.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.c25 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://cdn.welcometothejungle.co/uploads/video/image/9401/151602/small_wttj_video_3bbaeeb9-2f2f-4a1b-ac14-e6be495d3bb4.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.c26 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.c27 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://cdn.welcometothejungle.co/uploads/video/image/1540/151603/small_wttj_video_267f7b56-911e-4888-9721-085e83f9f479.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.c28 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://cdn.welcometothejungle.co/uploads/image/file/7223/151601/small_wttj-jobs_360f6eb8-26e1-42aa-a3ee-837c3767b734.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.c29 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://cdn.welcometothejungle.co/uploads/video/image/1702/151603/small_wttj_video_c9575808-fd3a-4571-95ef-873af73be887.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.c30 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://cdn.welcometothejungle.co/uploads/image/file/7206/151601/small_wttj-offres-emploi_170aa579-aa26-4cf8-838c-9d68d4da6c32.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+
+.c4:hover .c5 {
+  opacity: 0.8;
+}
+
+.c11 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 300ms ease;
+  -webkit-transition: transform 300ms ease;
+  transition: transform 300ms ease;
+}
+
+.c17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.c17:hover {
+  opacity: 1;
+}
+
+.c17:hover .c10 {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.c8:hover .c10 {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: linear-gradient(transparent,rgba(0,0,0,0.6));
+  padding: 20px 10px 10px;
+  font-size: 14px;
+}
+
+.c15 {
+  margin-left: 10px;
+}
+
+.c22 {
+  -webkit-transition: margin-bottom 250ms ease;
+  transition: margin-bottom 250ms ease;
+}
+
+.c20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.c20:hover .c21 {
+  margin-bottom: 5px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  background: #31333b;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 {
+  -webkit-transform: translate3d(-0px,0,0);
+  -ms-transform: translate3d(-0px,0,0);
+  transform: translate3d(-0px,0,0);
+  -webkit-transition: -webkit-transform 600ms cubic-bezier(0.65,0.05,0.36,1);
+  -webkit-transition: transform 600ms cubic-bezier(0.65,0.05,0.36,1);
+  transition: transform 600ms cubic-bezier(0.65,0.05,0.36,1);
+}
+
+.c2 {
+  width: 1000px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.c3 {
+  width: 100vw;
+}
+
+@media (min-width:640px) {
+  .c3 {
+    width: calc(100vw / 3);
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      width={1000}
+    >
+      <div
+        className="c3"
+      >
+        <a
+          href="https://www.welcometothejungle.co/companies/wttj"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 c6"
+            />
+            <div
+              className="c7"
+            >
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                >
+                  <div
+                    className="c10 c11"
+                  >
+                    <button
+                      className="c12"
+                      color="green"
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="c13"
+                        color="white"
+                        size="20"
+                      >
+                        <svg
+                          aria-labelledby="title"
+                          height="1em"
+                          role="img"
+                          title="play"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                        >
+                          <path
+                            d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        className="c14"
+                      />
+                    </button>
+                  </div>
+                  <div
+                    className="c15"
+                  >
+                    <div>
+                      Bertrand Uzeel
+                    </div>
+                    <div>
+                      Co-Founder
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c3"
+      >
+        <a
+          href="https://www.welcometothejungle.co/companies/wttj"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 c16"
+            />
+            <div
+              className="c7"
+            >
+              <div
+                className="c17"
+              >
+                <div
+                  className="c10 c11"
+                >
+                  <button
+                    className="c12"
+                    color="green"
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="c13"
+                      color="white"
+                      size="20"
+                    >
+                      <svg
+                        aria-labelledby="title"
+                        height="1em"
+                        role="img"
+                        title="picture"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <path
+                          d="M18 15v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h3.02c.55 0 1-.45 1-1s-.45-1-1-1H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5c0-.55-.45-1-1-1s-1 .45-1 1zm-2.5 3H6.52c-.42 0-.65-.48-.39-.81l1.74-2.23a.5.5 0 0 1 .78-.01l1.56 1.88 2.35-3.02c.2-.26.6-.26.79.01l2.55 3.39c.25.32.01.79-.4.79zm3.8-9.11c.48-.77.75-1.67.69-2.66-.13-2.15-1.84-3.97-3.97-4.2A4.5 4.5 0 0 0 11 6.5c0 2.49 2.01 4.5 4.49 4.5.88 0 1.7-.26 2.39-.7l2.41 2.41c.39.39 1.03.39 1.42 0 .39-.39.39-1.03 0-1.42l-2.41-2.4zM15.5 9a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      className="c14"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c3"
+      >
+        <a
+          href="https://www.welcometothejungle.co/companies/wttj"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 c18"
+            />
+            <div
+              className="c7"
+            >
+              <div
+                className="c17"
+              >
+                <div
+                  className="c10 c11"
+                >
+                  <button
+                    className="c12"
+                    color="green"
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="c13"
+                      color="white"
+                      size="20"
+                    >
+                      <svg
+                        aria-labelledby="title"
+                        height="1em"
+                        role="img"
+                        title="picture"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <path
+                          d="M18 15v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h3.02c.55 0 1-.45 1-1s-.45-1-1-1H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5c0-.55-.45-1-1-1s-1 .45-1 1zm-2.5 3H6.52c-.42 0-.65-.48-.39-.81l1.74-2.23a.5.5 0 0 1 .78-.01l1.56 1.88 2.35-3.02c.2-.26.6-.26.79.01l2.55 3.39c.25.32.01.79-.4.79zm3.8-9.11c.48-.77.75-1.67.69-2.66-.13-2.15-1.84-3.97-3.97-4.2A4.5 4.5 0 0 0 11 6.5c0 2.49 2.01 4.5 4.49 4.5.88 0 1.7-.26 2.39-.7l2.41 2.41c.39.39 1.03.39 1.42 0 .39-.39.39-1.03 0-1.42l-2.41-2.4zM15.5 9a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      className="c14"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c3"
+      >
+        <a
+          href="https://www.welcometothejungle.co/companies/wttj"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 c19"
+            />
+            <div
+              className="c7"
+            >
+              <div
+                className="c20"
+              >
+                <div
+                  className="c21 c22"
+                >
+                  <span
+                    className="c23"
+                    color="green"
+                    size="40"
+                  >
+                    <svg
+                      aria-labelledby="title"
+                      height="1em"
+                      role="img"
+                      title="quote"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        d="M7.17 17c.51 0 .98-.29 1.2-.74l1.42-2.84c.14-.28.21-.58.21-.89V8c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h2l-1.03 2.06c-.45.89.2 1.94 1.2 1.94zm10 0c.51 0 .98-.29 1.2-.74l1.42-2.84c.14-.28.21-.58.21-.89V8c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h2l-1.03 2.06c-.45.89.2 1.94 1.2 1.94z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                Life is short, work somewhere awesome.
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c3"
+      >
+        <a
+          href="https://www.welcometothejungle.co/companies/wttj"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 c24"
+            />
+            <div
+              className="c7"
+            >
+              <div
+                className="c17"
+              >
+                <div
+                  className="c10 c11"
+                >
+                  <button
+                    className="c12"
+                    color="green"
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="c13"
+                      color="white"
+                      size="20"
+                    >
+                      <svg
+                        aria-labelledby="title"
+                        height="1em"
+                        role="img"
+                        title="picture"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <path
+                          d="M18 15v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h3.02c.55 0 1-.45 1-1s-.45-1-1-1H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5c0-.55-.45-1-1-1s-1 .45-1 1zm-2.5 3H6.52c-.42 0-.65-.48-.39-.81l1.74-2.23a.5.5 0 0 1 .78-.01l1.56 1.88 2.35-3.02c.2-.26.6-.26.79.01l2.55 3.39c.25.32.01.79-.4.79zm3.8-9.11c.48-.77.75-1.67.69-2.66-.13-2.15-1.84-3.97-3.97-4.2A4.5 4.5 0 0 0 11 6.5c0 2.49 2.01 4.5 4.49 4.5.88 0 1.7-.26 2.39-.7l2.41 2.41c.39.39 1.03.39 1.42 0 .39-.39.39-1.03 0-1.42l-2.41-2.4zM15.5 9a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      className="c14"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c3"
+      >
+        <a
+          href="https://www.welcometothejungle.co/companies/wttj"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 c25"
+            />
+            <div
+              className="c7"
+            >
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                >
+                  <div
+                    className="c10 c11"
+                  >
+                    <button
+                      className="c12"
+                      color="green"
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="c13"
+                        color="white"
+                        size="20"
+                      >
+                        <svg
+                          aria-labelledby="title"
+                          height="1em"
+                          role="img"
+                          title="play"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                        >
+                          <path
+                            d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        className="c14"
+                      />
+                    </button>
+                  </div>
+                  <div
+                    className="c15"
+                  >
+                    <div>
+                      Mélanie Babinot
+                    </div>
+                    <div>
+                      Sales Development Manager
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c3"
+      >
+        <a
+          href="https://www.welcometothejungle.co/companies/wttj"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 c26"
+            />
+            <div
+              className="c7"
+            >
+              <div
+                className="c17"
+              >
+                <div
+                  className="c10 c11"
+                >
+                  <button
+                    className="c12"
+                    color="green"
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="c13"
+                      color="white"
+                      size="20"
+                    >
+                      <svg
+                        aria-labelledby="title"
+                        height="1em"
+                        role="img"
+                        title="picture"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <path
+                          d="M18 15v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h3.02c.55 0 1-.45 1-1s-.45-1-1-1H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5c0-.55-.45-1-1-1s-1 .45-1 1zm-2.5 3H6.52c-.42 0-.65-.48-.39-.81l1.74-2.23a.5.5 0 0 1 .78-.01l1.56 1.88 2.35-3.02c.2-.26.6-.26.79.01l2.55 3.39c.25.32.01.79-.4.79zm3.8-9.11c.48-.77.75-1.67.69-2.66-.13-2.15-1.84-3.97-3.97-4.2A4.5 4.5 0 0 0 11 6.5c0 2.49 2.01 4.5 4.49 4.5.88 0 1.7-.26 2.39-.7l2.41 2.41c.39.39 1.03.39 1.42 0 .39-.39.39-1.03 0-1.42l-2.41-2.4zM15.5 9a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      className="c14"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c3"
+      >
+        <a
+          href="https://www.welcometothejungle.co/companies/wttj"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 c19"
+            />
+            <div
+              className="c7"
+            >
+              <div
+                className="c20"
+              >
+                <div
+                  className="c21 c22"
+                >
+                  <span
+                    className="c23"
+                    color="green"
+                    size="40"
+                  >
+                    <svg
+                      aria-labelledby="title"
+                      height="1em"
+                      role="img"
+                      title="quote"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        d="M7.17 17c.51 0 .98-.29 1.2-.74l1.42-2.84c.14-.28.21-.58.21-.89V8c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h2l-1.03 2.06c-.45.89.2 1.94 1.2 1.94zm10 0c.51 0 .98-.29 1.2-.74l1.42-2.84c.14-.28.21-.58.21-.89V8c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h2l-1.03 2.06c-.45.89.2 1.94 1.2 1.94z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                C’est pas faux !
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c3"
+      >
+        <a
+          href="https://www.welcometothejungle.co/companies/wttj"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 c27"
+            />
+            <div
+              className="c7"
+            >
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                >
+                  <div
+                    className="c10 c11"
+                  >
+                    <button
+                      className="c12"
+                      color="green"
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="c13"
+                        color="white"
+                        size="20"
+                      >
+                        <svg
+                          aria-labelledby="title"
+                          height="1em"
+                          role="img"
+                          title="play"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                        >
+                          <path
+                            d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        className="c14"
+                      />
+                    </button>
+                  </div>
+                  <div
+                    className="c15"
+                  >
+                    <div>
+                      Kevin Le Roy
+                    </div>
+                    <div>
+                      CTO
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c3"
+      >
+        <a
+          href="https://www.welcometothejungle.co/companies/wttj"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 c28"
+            />
+            <div
+              className="c7"
+            >
+              <div
+                className="c17"
+              >
+                <div
+                  className="c10 c11"
+                >
+                  <button
+                    className="c12"
+                    color="green"
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="c13"
+                      color="white"
+                      size="20"
+                    >
+                      <svg
+                        aria-labelledby="title"
+                        height="1em"
+                        role="img"
+                        title="picture"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <path
+                          d="M18 15v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h3.02c.55 0 1-.45 1-1s-.45-1-1-1H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5c0-.55-.45-1-1-1s-1 .45-1 1zm-2.5 3H6.52c-.42 0-.65-.48-.39-.81l1.74-2.23a.5.5 0 0 1 .78-.01l1.56 1.88 2.35-3.02c.2-.26.6-.26.79.01l2.55 3.39c.25.32.01.79-.4.79zm3.8-9.11c.48-.77.75-1.67.69-2.66-.13-2.15-1.84-3.97-3.97-4.2A4.5 4.5 0 0 0 11 6.5c0 2.49 2.01 4.5 4.49 4.5.88 0 1.7-.26 2.39-.7l2.41 2.41c.39.39 1.03.39 1.42 0 .39-.39.39-1.03 0-1.42l-2.41-2.4zM15.5 9a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      className="c14"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c3"
+      >
+        <a
+          href="https://www.welcometothejungle.co/companies/wttj"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 c29"
+            />
+            <div
+              className="c7"
+            >
+              <div
+                className="c8"
+              >
+                <div
+                  className="c9"
+                >
+                  <div
+                    className="c10 c11"
+                  >
+                    <button
+                      className="c12"
+                      color="green"
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="c13"
+                        color="white"
+                        size="20"
+                      >
+                        <svg
+                          aria-labelledby="title"
+                          height="1em"
+                          role="img"
+                          title="play"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                        >
+                          <path
+                            d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        className="c14"
+                      />
+                    </button>
+                  </div>
+                  <div
+                    className="c15"
+                  >
+                    <div>
+                      Anne-Claire
+                    </div>
+                    <div>
+                      Head of production
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c3"
+      >
+        <a
+          href="https://www.welcometothejungle.co/companies/wttj"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 c30"
+            />
+            <div
+              className="c7"
+            >
+              <div
+                className="c17"
+              >
+                <div
+                  className="c10 c11"
+                >
+                  <button
+                    className="c12"
+                    color="green"
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="c13"
+                      color="white"
+                      size="20"
+                    >
+                      <svg
+                        aria-labelledby="title"
+                        height="1em"
+                        role="img"
+                        title="picture"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <path
+                          d="M18 15v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h3.02c.55 0 1-.45 1-1s-.45-1-1-1H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5c0-.55-.45-1-1-1s-1 .45-1 1zm-2.5 3H6.52c-.42 0-.65-.48-.39-.81l1.74-2.23a.5.5 0 0 1 .78-.01l1.56 1.88 2.35-3.02c.2-.26.6-.26.79.01l2.55 3.39c.25.32.01.79-.4.79zm3.8-9.11c.48-.77.75-1.67.69-2.66-.13-2.15-1.84-3.97-3.97-4.2A4.5 4.5 0 0 0 11 6.5c0 2.49 2.01 4.5 4.49 4.5.88 0 1.7-.26 2.39-.7l2.41 2.41c.39.39 1.03.39 1.42 0 .39-.39.39-1.03 0-1.42l-2.41-2.4zM15.5 9a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      className="c14"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
