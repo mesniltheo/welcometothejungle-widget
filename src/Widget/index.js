@@ -89,8 +89,6 @@ class Widget extends Component {
     const { columns, company, content } = this.props;
     const { id, logo, name } = company;
 
-    // console.log(this.refSlider);
-
     const {
       columnsResize,
       step,

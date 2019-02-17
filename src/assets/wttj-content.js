@@ -43,6 +43,11 @@ export const config = {
     {
       type: "picture",
       caption:
+        "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg"
+    },
+    {
+      type: "picture",
+      caption:
         "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg"
     },
     {

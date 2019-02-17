@@ -43,6 +43,10 @@ ShallowWrapper {
           "type": "video",
         },
         Object {
+          "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+          "type": "picture",
+        },
+        Object {
           "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
           "type": "picture",
         },
@@ -93,7 +97,7 @@ ShallowWrapper {
           handleNext={[Function]}
           handlePrev={[Function]}
           logo="logo-wttj.png"
-          maxStep={3}
+          maxStep={4}
           name="Welcome to the jungle"
           step={0}
         />,
@@ -129,6 +133,10 @@ ShallowWrapper {
                   "subtitle": "Sales Development Manager",
                   "title": "Mélanie Babinot",
                   "type": "video",
+                },
+                Object {
+                  "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+                  "type": "picture",
                 },
                 Object {
                   "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
@@ -172,7 +180,7 @@ ShallowWrapper {
           />
         </ForwardRef>,
         <ProgressBar
-          progress={50}
+          progress={42.857142857142854}
         />,
         <Footer
           id="wttj"
@@ -189,7 +197,7 @@ ShallowWrapper {
           "handleNext": [Function],
           "handlePrev": [Function],
           "logo": "logo-wttj.png",
-          "maxStep": 3,
+          "maxStep": 4,
           "name": "Welcome to the jungle",
           "step": 0,
         },
@@ -233,6 +241,10 @@ ShallowWrapper {
                   "subtitle": "Sales Development Manager",
                   "title": "Mélanie Babinot",
                   "type": "video",
+                },
+                Object {
+                  "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+                  "type": "picture",
                 },
                 Object {
                   "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
@@ -312,6 +324,10 @@ ShallowWrapper {
                 "type": "video",
               },
               Object {
+                "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+                "type": "picture",
+              },
+              Object {
                 "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
                 "type": "picture",
               },
@@ -379,7 +395,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "progress": 50,
+          "progress": 42.857142857142854,
         },
         "ref": null,
         "rendered": null,
@@ -438,7 +454,7 @@ ShallowWrapper {
             handleNext={[Function]}
             handlePrev={[Function]}
             logo="logo-wttj.png"
-            maxStep={3}
+            maxStep={4}
             name="Welcome to the jungle"
             step={0}
           />,
@@ -474,6 +490,10 @@ ShallowWrapper {
                     "subtitle": "Sales Development Manager",
                     "title": "Mélanie Babinot",
                     "type": "video",
+                  },
+                  Object {
+                    "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+                    "type": "picture",
                   },
                   Object {
                     "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
@@ -517,7 +537,7 @@ ShallowWrapper {
             />
           </ForwardRef>,
           <ProgressBar
-            progress={50}
+            progress={42.857142857142854}
           />,
           <Footer
             id="wttj"
@@ -534,7 +554,7 @@ ShallowWrapper {
             "handleNext": [Function],
             "handlePrev": [Function],
             "logo": "logo-wttj.png",
-            "maxStep": 3,
+            "maxStep": 4,
             "name": "Welcome to the jungle",
             "step": 0,
           },
@@ -578,6 +598,10 @@ ShallowWrapper {
                     "subtitle": "Sales Development Manager",
                     "title": "Mélanie Babinot",
                     "type": "video",
+                  },
+                  Object {
+                    "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+                    "type": "picture",
                   },
                   Object {
                     "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
@@ -657,6 +681,10 @@ ShallowWrapper {
                   "type": "video",
                 },
                 Object {
+                  "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+                  "type": "picture",
+                },
+                Object {
                   "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
                   "type": "picture",
                 },
@@ -724,7 +752,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "progress": 50,
+            "progress": 42.857142857142854,
           },
           "ref": null,
           "rendered": null,
@@ -840,6 +868,10 @@ ShallowWrapper {
           "type": "video",
         },
         Object {
+          "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+          "type": "picture",
+        },
+        Object {
           "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
           "type": "picture",
         },
@@ -890,7 +922,7 @@ ShallowWrapper {
           handleNext={[Function]}
           handlePrev={[Function]}
           logo="logo-wttj.png"
-          maxStep={5}
+          maxStep={6}
           name="Welcome to the jungle"
           step={0}
         />,
@@ -926,6 +958,10 @@ ShallowWrapper {
                   "subtitle": "Sales Development Manager",
                   "title": "Mélanie Babinot",
                   "type": "video",
+                },
+                Object {
+                  "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+                  "type": "picture",
                 },
                 Object {
                   "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
@@ -969,7 +1005,7 @@ ShallowWrapper {
           />
         </ForwardRef>,
         <ProgressBar
-          progress={16.666666666666664}
+          progress={14.285714285714285}
         />,
         <Footer
           id="wttj"
@@ -986,7 +1022,7 @@ ShallowWrapper {
           "handleNext": [Function],
           "handlePrev": [Function],
           "logo": "logo-wttj.png",
-          "maxStep": 5,
+          "maxStep": 6,
           "name": "Welcome to the jungle",
           "step": 0,
         },
@@ -1030,6 +1066,10 @@ ShallowWrapper {
                   "subtitle": "Sales Development Manager",
                   "title": "Mélanie Babinot",
                   "type": "video",
+                },
+                Object {
+                  "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+                  "type": "picture",
                 },
                 Object {
                   "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
@@ -1109,6 +1149,10 @@ ShallowWrapper {
                 "type": "video",
               },
               Object {
+                "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+                "type": "picture",
+              },
+              Object {
                 "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
                 "type": "picture",
               },
@@ -1176,7 +1220,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "progress": 16.666666666666664,
+          "progress": 14.285714285714285,
         },
         "ref": null,
         "rendered": null,
@@ -1235,7 +1279,7 @@ ShallowWrapper {
             handleNext={[Function]}
             handlePrev={[Function]}
             logo="logo-wttj.png"
-            maxStep={5}
+            maxStep={6}
             name="Welcome to the jungle"
             step={0}
           />,
@@ -1271,6 +1315,10 @@ ShallowWrapper {
                     "subtitle": "Sales Development Manager",
                     "title": "Mélanie Babinot",
                     "type": "video",
+                  },
+                  Object {
+                    "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+                    "type": "picture",
                   },
                   Object {
                     "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
@@ -1314,7 +1362,7 @@ ShallowWrapper {
             />
           </ForwardRef>,
           <ProgressBar
-            progress={16.666666666666664}
+            progress={14.285714285714285}
           />,
           <Footer
             id="wttj"
@@ -1331,7 +1379,7 @@ ShallowWrapper {
             "handleNext": [Function],
             "handlePrev": [Function],
             "logo": "logo-wttj.png",
-            "maxStep": 5,
+            "maxStep": 6,
             "name": "Welcome to the jungle",
             "step": 0,
           },
@@ -1375,6 +1423,10 @@ ShallowWrapper {
                     "subtitle": "Sales Development Manager",
                     "title": "Mélanie Babinot",
                     "type": "video",
+                  },
+                  Object {
+                    "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+                    "type": "picture",
                   },
                   Object {
                     "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
@@ -1454,6 +1506,10 @@ ShallowWrapper {
                   "type": "video",
                 },
                 Object {
+                  "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg",
+                  "type": "picture",
+                },
+                Object {
                   "caption": "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg",
                   "type": "picture",
                 },
@@ -1521,7 +1577,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "progress": 16.666666666666664,
+            "progress": 14.285714285714285,
           },
           "ref": null,
           "rendered": null,

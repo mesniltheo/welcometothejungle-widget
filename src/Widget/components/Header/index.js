@@ -27,7 +27,7 @@ const Header = ({ handleNext, handlePrev, logo, name, step, maxStep }) => {
             iconName="arrowRight"
             onClick={handleNext}
             color="grey"
-            disabled={step === maxStep}
+            disabled={step >= maxStep}
           />
         </S.Next>
       </Center>
