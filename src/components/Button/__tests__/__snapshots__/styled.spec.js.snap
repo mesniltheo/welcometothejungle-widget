@@ -24,12 +24,16 @@ exports[`Button styled Wrapper should render the button with a onlyIcon 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
+  -webkit-transition: background 300ms ease-in-out,opacity 300ms;
+  transition: background 300ms ease-in-out,opacity 300ms;
 }
 
-.c0:hover {
+.c0:hover:enabled {
   background: #37cbaa;
+}
+
+.c0:disabled {
+  opacity: 0.3;
 }
 
 <div
@@ -64,12 +68,16 @@ exports[`Button styled Wrapper should render the button with a onlyIcon 2`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
+  -webkit-transition: background 300ms ease-in-out,opacity 300ms;
+  transition: background 300ms ease-in-out,opacity 300ms;
 }
 
-.c0:hover {
+.c0:hover:enabled {
   background: #37cbaa;
+}
+
+.c0:disabled {
+  opacity: 0.3;
 }
 
 <div

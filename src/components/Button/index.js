@@ -27,7 +27,15 @@ export default class Button extends PureComponent {
   };
 
   render() {
-    const { blank, children, color, iconName, href, size } = this.props;
+    const {
+      blank,
+      children,
+      color,
+      disabled,
+      iconName,
+      href,
+      size
+    } = this.props;
 
     // get props for link
     const linkProps = {
@@ -40,7 +48,8 @@ export default class Button extends PureComponent {
     // get props for button
     const buttonProps = {
       as: "button",
-      onClick: this.handleClick
+      onClick: this.handleClick,
+      disabled
     };
 
     // if href exist it's a link else it's a button

@@ -24,12 +24,16 @@ exports[`Button Button should render the button 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
+  -webkit-transition: background 300ms ease-in-out,opacity 300ms;
+  transition: background 300ms ease-in-out,opacity 300ms;
 }
 
-.c0:hover {
+.c0:hover:enabled {
   background: #37cbaa;
+}
+
+.c0:disabled {
+  opacity: 0.3;
 }
 
 <button
@@ -67,12 +71,16 @@ exports[`Button Link should render the link button 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
+  -webkit-transition: background 300ms ease-in-out,opacity 300ms;
+  transition: background 300ms ease-in-out,opacity 300ms;
 }
 
-.c0:hover {
+.c0:hover:enabled {
   background: #37cbaa;
+}
+
+.c0:disabled {
+  opacity: 0.3;
 }
 
 <a
@@ -110,12 +118,16 @@ exports[`Button Link should render the link button with blank 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
+  -webkit-transition: background 300ms ease-in-out,opacity 300ms;
+  transition: background 300ms ease-in-out,opacity 300ms;
 }
 
-.c0:hover {
+.c0:hover:enabled {
   background: #37cbaa;
+}
+
+.c0:disabled {
+  opacity: 0.3;
 }
 
 <a

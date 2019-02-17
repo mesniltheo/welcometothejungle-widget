@@ -17,10 +17,14 @@ export const Wrapper = styled.div`
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
-  transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out, opacity 300ms;
 
-  &:hover {
+  &:hover:enabled {
     background: ${getBackgroundHover};
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 `;
 
