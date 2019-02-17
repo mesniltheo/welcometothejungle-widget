@@ -34,30 +34,16 @@ describe("Slider styled", () => {
   });
 
   describe("Content", () => {
-    it("should render the Content with a correct width on mobile", () => {
+    it("should render the Content with a correct width", () => {
       const tree = renderer
         .create(
-          <Content columns={3}>
+          <Content contentWidth={300}>
             <div>test</div>
           </Content>
         )
         .toJSON();
 
-      expect(tree).toHaveStyleRule("width", "100vw");
-    });
-
-    it("should render the Content with a correct width on desktop", () => {
-      const tree = renderer
-        .create(
-          <Content columns={2}>
-            <div>test</div>
-          </Content>
-        )
-        .toJSON();
-
-      expect(tree).toHaveStyleRule("width", "calc(100vw / 2)", {
-        media: "(min-width:640px)"
-      });
+      expect(tree).toHaveStyleRule("width", "300px");
     });
   });
 });

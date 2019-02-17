@@ -103,7 +103,6 @@ ShallowWrapper {
         />,
         <ForwardRef>
           <Slider
-            columns={3}
             content={
               Array [
                 Object {
@@ -168,6 +167,7 @@ ShallowWrapper {
                 },
               ]
             }
+            contentWidth={0}
             id="wttj"
             refSlider={
               Object {
@@ -211,7 +211,6 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": <Slider
-            columns={3}
             content={
               Array [
                 Object {
@@ -276,6 +275,7 @@ ShallowWrapper {
                 },
               ]
             }
+            contentWidth={0}
             id="wttj"
             refSlider={
               Object {
@@ -293,7 +293,6 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "columns": 3,
             "content": Array [
               Object {
                 "caption": "https://cdn.welcometothejungle.co/uploads/video/image/1480/151603/small_wttj_video_0679859b-6e84-4549-bbc4-1330eddcac57.jpg",
@@ -356,6 +355,7 @@ ShallowWrapper {
                 "type": "picture",
               },
             ],
+            "contentWidth": 0,
             "id": "wttj",
             "refSlider": Object {
               "current": null,
@@ -460,7 +460,6 @@ ShallowWrapper {
           />,
           <ForwardRef>
             <Slider
-              columns={3}
               content={
                 Array [
                   Object {
@@ -525,6 +524,7 @@ ShallowWrapper {
                   },
                 ]
               }
+              contentWidth={0}
               id="wttj"
               refSlider={
                 Object {
@@ -568,7 +568,6 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": <Slider
-              columns={3}
               content={
                 Array [
                   Object {
@@ -633,6 +632,7 @@ ShallowWrapper {
                   },
                 ]
               }
+              contentWidth={0}
               id="wttj"
               refSlider={
                 Object {
@@ -650,7 +650,6 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "columns": 3,
               "content": Array [
                 Object {
                   "caption": "https://cdn.welcometothejungle.co/uploads/video/image/1480/151603/small_wttj_video_0679859b-6e84-4549-bbc4-1330eddcac57.jpg",
@@ -713,6 +712,7 @@ ShallowWrapper {
                   "type": "picture",
                 },
               ],
+              "contentWidth": 0,
               "id": "wttj",
               "refSlider": Object {
                 "current": null,
@@ -928,7 +928,6 @@ ShallowWrapper {
         />,
         <ForwardRef>
           <Slider
-            columns={3}
             content={
               Array [
                 Object {
@@ -993,6 +992,7 @@ ShallowWrapper {
                 },
               ]
             }
+            contentWidth={null}
             id="wttj"
             refSlider={
               Object {
@@ -1036,7 +1036,6 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": <Slider
-            columns={3}
             content={
               Array [
                 Object {
@@ -1101,6 +1100,7 @@ ShallowWrapper {
                 },
               ]
             }
+            contentWidth={null}
             id="wttj"
             refSlider={
               Object {
@@ -1118,7 +1118,6 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "columns": 3,
             "content": Array [
               Object {
                 "caption": "https://cdn.welcometothejungle.co/uploads/video/image/1480/151603/small_wttj_video_0679859b-6e84-4549-bbc4-1330eddcac57.jpg",
@@ -1181,6 +1180,7 @@ ShallowWrapper {
                 "type": "picture",
               },
             ],
+            "contentWidth": null,
             "id": "wttj",
             "refSlider": Object {
               "current": null,
@@ -1285,7 +1285,6 @@ ShallowWrapper {
           />,
           <ForwardRef>
             <Slider
-              columns={3}
               content={
                 Array [
                   Object {
@@ -1350,6 +1349,7 @@ ShallowWrapper {
                   },
                 ]
               }
+              contentWidth={null}
               id="wttj"
               refSlider={
                 Object {
@@ -1393,7 +1393,6 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": <Slider
-              columns={3}
               content={
                 Array [
                   Object {
@@ -1458,6 +1457,7 @@ ShallowWrapper {
                   },
                 ]
               }
+              contentWidth={null}
               id="wttj"
               refSlider={
                 Object {
@@ -1475,7 +1475,6 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "columns": 3,
               "content": Array [
                 Object {
                   "caption": "https://cdn.welcometothejungle.co/uploads/video/image/1480/151603/small_wttj_video_0679859b-6e84-4549-bbc4-1330eddcac57.jpg",
@@ -1538,6 +1537,7 @@ ShallowWrapper {
                   "type": "picture",
                 },
               ],
+              "contentWidth": null,
               "id": "wttj",
               "refSlider": Object {
                 "current": null,

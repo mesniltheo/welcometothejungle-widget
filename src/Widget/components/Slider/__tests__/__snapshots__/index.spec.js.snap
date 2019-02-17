@@ -395,6 +395,7 @@ exports[`should render the component correctly 1`] = `
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  width: 100%;
   overflow: hidden;
   background: #31333b;
   -webkit-box-pack: justify;
@@ -425,13 +426,7 @@ exports[`should render the component correctly 1`] = `
 }
 
 .c3 {
-  width: 100vw;
-}
-
-@media (min-width:640px) {
-  .c3 {
-    width: calc(100vw / 3);
-  }
+  width: 300px;
 }
 
 <div

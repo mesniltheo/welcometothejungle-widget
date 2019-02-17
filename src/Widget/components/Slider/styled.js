@@ -5,6 +5,7 @@ import { colors } from "./../../../config";
 export const Wrapper = styled.div`
   display: flex;
   height: 100%;
+  width: 100%;
   overflow: hidden;
   background: ${colors.black};
   justify-content: space-between;
@@ -23,9 +24,5 @@ export const Slide = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 100vw;
-
-  @media (min-width: 640px) {
-    width: ${({ columns }) => `calc(100vw / ${columns})`};
-  }
+  width: ${({ contentWidth }) => `${contentWidth}px`};
 `;

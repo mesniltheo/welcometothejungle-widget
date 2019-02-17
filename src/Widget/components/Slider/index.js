@@ -17,8 +17,8 @@ class Slider extends Component {
 
   render() {
     const {
-      columns,
       content,
+      contentWidth,
       id,
       refSlider,
       translateScroll,
@@ -30,7 +30,7 @@ class Slider extends Component {
         <S.Scroll translate={translateScroll}>
           <S.Slide width={width}>
             {content.map((item, key) => (
-              <S.Content columns={columns} key={`content_${key}`}>
+              <S.Content contentWidth={contentWidth} key={`content_${key}`}>
                 <a
                   href={`https://www.welcometothejungle.co/companies/${id}`}
                   target="_blank"

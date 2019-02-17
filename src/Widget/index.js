@@ -94,6 +94,7 @@ class Widget extends Component {
       step,
       steps,
       translateScroll,
+      widthContent,
       widthSlide
     } = this.state;
 
@@ -109,13 +110,13 @@ class Widget extends Component {
         />
         <S.Slider>
           <Slider
-            columns={columns}
             content={content}
+            contentWidth={widthContent}
             id={id}
             refSlider={this.refSlider}
             step={step}
-            width={widthSlide}
             translateScroll={translateScroll}
+            width={widthSlide}
           />
         </S.Slider>
         <ProgressBar progress={((step + columnsResize) / steps) * 100} />

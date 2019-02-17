@@ -7,8 +7,8 @@ import wttjContent from "./../../../../assets/wttj-content";
 import Slider from "../";
 
 const DEFAULT_PROPS = {
-  columns: 3,
   content: wttjContent.content,
+  contentWidth: 300,
   id: "wttj",
   width: 1000,
   translateScroll: 0
