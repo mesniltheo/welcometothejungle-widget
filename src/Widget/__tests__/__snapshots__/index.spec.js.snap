@@ -101,7 +101,10 @@ ShallowWrapper {
           name="Welcome to the jungle"
           step={0}
         />,
-        <ForwardRef>
+        <ForwardRef
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+        >
           <Slider
             content={
               Array [
@@ -286,6 +289,8 @@ ShallowWrapper {
             translateScroll={0}
             width={0}
           />,
+          "onTouchMove": [Function],
+          "onTouchStart": [Function],
         },
         "ref": null,
         "rendered": Object {
@@ -458,7 +463,10 @@ ShallowWrapper {
             name="Welcome to the jungle"
             step={0}
           />,
-          <ForwardRef>
+          <ForwardRef
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+          >
             <Slider
               content={
                 Array [
@@ -643,6 +651,8 @@ ShallowWrapper {
               translateScroll={0}
               width={0}
             />,
+            "onTouchMove": [Function],
+            "onTouchStart": [Function],
           },
           "ref": null,
           "rendered": Object {
@@ -926,7 +936,10 @@ ShallowWrapper {
           name="Welcome to the jungle"
           step={0}
         />,
-        <ForwardRef>
+        <ForwardRef
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+        >
           <Slider
             content={
               Array [
@@ -1111,6 +1124,8 @@ ShallowWrapper {
             translateScroll={0}
             width={0}
           />,
+          "onTouchMove": [Function],
+          "onTouchStart": [Function],
         },
         "ref": null,
         "rendered": Object {
@@ -1283,7 +1298,10 @@ ShallowWrapper {
             name="Welcome to the jungle"
             step={0}
           />,
-          <ForwardRef>
+          <ForwardRef
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+          >
             <Slider
               content={
                 Array [
@@ -1468,6 +1486,8 @@ ShallowWrapper {
               translateScroll={0}
               width={0}
             />,
+            "onTouchMove": [Function],
+            "onTouchStart": [Function],
           },
           "ref": null,
           "rendered": Object {

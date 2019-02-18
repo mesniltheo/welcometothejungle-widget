@@ -13,6 +13,19 @@ const DEFAULT_PROPS = {
 
 const initInnerWidth = 1000;
 
+/* Create event for touchStart and touchMove */
+function createClientXY(x, y) {
+  return { clientX: x, clientY: y };
+}
+
+function createStartTouchEventObject({ x = 0, y = 0 }) {
+  return { touches: [createClientXY(x, y)] };
+}
+
+function createMoveTouchEventObject({ x = 0, y = 0 }) {
+  return { touches: [createClientXY(x, y)] };
+}
+
 describe("Widget", () => {
   afterAll(() => {
     Object.defineProperty(window, "innerWidth", { value: initInnerWidth });
@@ -151,6 +164,79 @@ describe("Widget", () => {
       tree.instance().handlePrev();
 
       expect(tree.state().step).toEqual(0);
+    });
+  });
+
+  describe("Swiper", () => {
+    it("should no swipe", () => {
+      const tree = shallow(<Widget {...DEFAULT_PROPS} />);
+
+      const spyHandlePrev = jest.spyOn(tree.instance(), "handlePrev");
+      const spyHandleNext = jest.spyOn(tree.instance(), "handleNext");
+
+      // no swipe
+      tree
+        .instance()
+        .handleTouchMove(createStartTouchEventObject({ x: 100, y: 0 }));
+      expect(spyHandlePrev).not.toHaveBeenCalled();
+      expect(spyHandleNext).not.toHaveBeenCalled();
+    });
+
+    it("should no swipe when swipe to bottom", () => {
+      const tree = shallow(<Widget {...DEFAULT_PROPS} />);
+
+      const spyHandlePrev = jest.spyOn(tree.instance(), "handlePrev");
+      const spyHandleNext = jest.spyOn(tree.instance(), "handleNext");
+
+      // swipe to bottom
+      tree
+        .instance()
+        .handleTouchStart(createStartTouchEventObject({ x: 100, y: 0 }));
+      tree
+        .instance()
+        .handleTouchMove(createStartTouchEventObject({ x: 104, y: 20 }));
+      expect(spyHandlePrev).not.toHaveBeenCalled();
+      expect(spyHandleNext).not.toHaveBeenCalled();
+    });
+
+    it("should swipe on right and call handleNext", () => {
+      const tree = shallow(<Widget {...DEFAULT_PROPS} />);
+
+      const spyHandleNext = jest.spyOn(tree.instance(), "handleNext");
+
+      // swipe to right
+      tree
+        .instance()
+        .handleTouchStart(createStartTouchEventObject({ x: 100, y: 0 }));
+      tree
+        .instance()
+        .handleTouchMove(createStartTouchEventObject({ x: 20, y: 0 }));
+      expect(spyHandleNext).toHaveBeenCalled();
+    });
+
+    it("should swipe on left and call handlePrev", () => {
+      const tree = shallow(<Widget {...DEFAULT_PROPS} />);
+
+      const spyHandlePrev = jest.spyOn(tree.instance(), "handlePrev");
+
+      // swipe to left
+      tree
+        .instance()
+        .handleTouchStart(createStartTouchEventObject({ x: 100, y: 0 }));
+      tree
+        .instance()
+        .handleTouchMove(createStartTouchEventObject({ x: 200, y: 0 }));
+      expect(spyHandlePrev).toHaveBeenCalled();
+    });
+
+    it("should handle handleShouldStart and set touchScrollLeft state", () => {
+      const tree = shallow(<Widget {...DEFAULT_PROPS} />);
+
+      expect(tree.state().touchScrollLeft).toEqual(null);
+      tree
+        .instance()
+        .handleTouchStart(createStartTouchEventObject({ x: 100, y: 0 }));
+      expect(tree.state().touchScrollLeft).toEqual(100);
     });
   });
 });

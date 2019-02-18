@@ -26,6 +26,7 @@ class Widget extends Component {
     columnsResize: 0,
     step: 0,
     steps: 0,
+    touchScrollLeft: null,
     translateScroll: 0,
     widthContent: 0,
     widthSlide: 0
@@ -63,6 +64,29 @@ class Widget extends Component {
     if (event.keyCode === ARROW_LEFT) {
       this.handlePrev();
     }
+  };
+
+  handleTouchStart = event => {
+    this.setState({ touchScrollLeft: event.touches[0].clientX });
+  };
+
+  handleTouchMove = event => {
+    const { touchScrollLeft } = this.state;
+    if (!touchScrollLeft) {
+      return;
+    }
+
+    const touchScrollRight = event.touches[0].clientX;
+    const touchScrollDiff = touchScrollLeft - touchScrollRight;
+
+    if (touchScrollDiff > 5) {
+      this.handleNext();
+    } else if (touchScrollDiff < -5) {
+      this.handlePrev();
+    }
+
+    /* reset values */
+    this.setState({ touchScrollLeft: null });
   };
 
   handleNext = () => {
@@ -120,7 +144,10 @@ class Widget extends Component {
           step={step}
           maxStep={steps - columnsResize}
         />
-        <S.Slider>
+        <S.Slider
+          onTouchStart={this.handleTouchStart}
+          onTouchMove={this.handleTouchMove}
+        >
           <Slider
             content={content}
             contentWidth={widthContent}
