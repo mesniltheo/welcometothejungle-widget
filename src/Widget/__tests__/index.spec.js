@@ -2,6 +2,7 @@ import React from "react";
 import { shallow, mount } from "enzyme";
 import "jest-styled-components";
 
+import { ARROW_LEFT, ARROW_RIGHT } from "./../../constants";
 import wttjContent from "./../../assets/wttj-content";
 import Widget from "../";
 
@@ -47,6 +48,58 @@ describe("Widget", () => {
 
       tree.unmount();
       expect(spy).toHaveBeenCalledWith("resize", setWidth);
+    });
+  });
+
+  describe("keyEvents", () => {
+    it("should mount component and add event listener resize", () => {
+      const spy = jest.spyOn(window, "addEventListener");
+
+      const tree = mount(<Widget {...DEFAULT_PROPS} />);
+      const keyEvents = tree.instance().keyEvents;
+
+      expect(spy).toHaveBeenCalledWith("keydown", keyEvents);
+    });
+
+    it("should unmount component and remove event listener resize", () => {
+      const spy = jest.spyOn(window, "removeEventListener");
+      const tree = mount(<Widget {...DEFAULT_PROPS} />);
+      const keyEvents = tree.instance().keyEvents;
+
+      tree.unmount();
+      expect(spy).toHaveBeenCalledWith("keydown", keyEvents);
+    });
+
+    it("should call handlePrev if arrow left key is clicked", () => {
+      jest.spyOn(window, "removeEventListener");
+
+      const map = {};
+      window.addEventListener = jest.fn((event, cb) => {
+        map[event] = cb;
+      });
+
+      const tree = mount(<Widget {...DEFAULT_PROPS} />);
+      const spy = jest.spyOn(tree.instance(), "handlePrev");
+
+      map.keydown({ keyCode: ARROW_LEFT });
+
+      expect(spy).toHaveBeenCalled();
+    });
+
+    it("should call handleNext if arrow right key is clicked", () => {
+      jest.spyOn(window, "removeEventListener");
+
+      const map = {};
+      window.addEventListener = jest.fn((event, cb) => {
+        map[event] = cb;
+      });
+
+      const tree = mount(<Widget {...DEFAULT_PROPS} />);
+      const spy = jest.spyOn(tree.instance(), "handleNext");
+
+      map.keydown({ keyCode: ARROW_RIGHT });
+
+      expect(spy).toHaveBeenCalled();
     });
   });
 

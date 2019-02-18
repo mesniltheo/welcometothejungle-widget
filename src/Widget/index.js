@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 
+import { ARROW_LEFT, ARROW_RIGHT } from "./../constants";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ProgressBar from "./../components/ProgressBar";
@@ -55,6 +56,15 @@ class Widget extends Component {
     this.setState({ translateScroll: widthContent * step });
   };
 
+  keyEvents = event => {
+    if (event.keyCode === ARROW_RIGHT) {
+      this.handleNext();
+    }
+    if (event.keyCode === ARROW_LEFT) {
+      this.handlePrev();
+    }
+  };
+
   handleNext = () => {
     const { columnsResize, step, steps } = this.state;
 
@@ -70,6 +80,7 @@ class Widget extends Component {
   componentDidMount() {
     this.setWidth();
     window.addEventListener("resize", this.setWidth);
+    window.addEventListener("keydown", this.keyEvents);
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -83,10 +94,11 @@ class Widget extends Component {
 
   componentWillUnmount() {
     window.removeEventListener("resize", this.setWidth);
+    window.removeEventListener("keydown", this.keyEvents);
   }
 
   render() {
-    const { columns, company, content } = this.props;
+    const { company, content } = this.props;
     const { id, logo, name } = company;
 
     const {
