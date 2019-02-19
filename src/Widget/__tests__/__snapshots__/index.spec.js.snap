@@ -4,6 +4,7 @@ exports[`Widget should render the component correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Widget
+    autoplay={false}
     columns={3}
     company={
       Object {
@@ -839,6 +840,7 @@ exports[`Widget should render the component correctly for mobile 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Widget
+    autoplay={false}
     columns={3}
     company={
       Object {

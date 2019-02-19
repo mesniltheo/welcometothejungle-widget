@@ -11,6 +11,7 @@ import * as S from "./styled";
 
 class Widget extends Component {
   static propTypes = {
+    autoplay: PropTypes.bool,
     columns: PropTypes.number,
     company: PropTypes.object.isRequired,
     content: PropTypes.array.isRequired,
@@ -18,6 +19,7 @@ class Widget extends Component {
   };
 
   static defaultProps = {
+    autoplay: false,
     columns: 3,
     rows: 2
   };
@@ -81,28 +83,55 @@ class Widget extends Component {
 
     if (touchScrollDiff > 5) {
       this.handleNext();
+      this.stopAutoplay();
     } else if (touchScrollDiff < -5) {
       this.handlePrev();
+      this.stopAutoplay();
     }
 
     /* reset values */
     this.setState({ touchScrollLeft: null });
   };
 
-  handleNext = () => {
+  startAutoplay() {
+    const { autoplay } = this.props;
+
+    if (autoplay) {
+      this.autoplayInterval = setInterval(() => {
+        this.slideNext();
+      }, 3000);
+    }
+  }
+
+  stopAutoplay() {
+    this.autoplayInterval && clearInterval(this.autoplayInterval);
+  }
+
+  slideNext = () => {
     const { columnsResize, step, steps } = this.state;
 
     step < steps - columnsResize && this.setState({ step: step + 1 });
   };
 
-  handlePrev = () => {
+  slidePrev = () => {
     const { step } = this.state;
 
     step > 0 && this.setState({ step: step - 1 });
   };
 
+  handlePrev = () => {
+    this.slidePrev();
+    this.stopAutoplay();
+  };
+
+  handleNext = () => {
+    this.slideNext();
+    this.stopAutoplay();
+  };
+
   componentDidMount() {
     this.setWidth();
+    this.startAutoplay();
     window.addEventListener("resize", this.setWidth);
     window.addEventListener("keydown", this.keyEvents);
   }
@@ -117,6 +146,7 @@ class Widget extends Component {
   }
 
   componentWillUnmount() {
+    this.stopAutoplay();
     window.removeEventListener("resize", this.setWidth);
     window.removeEventListener("keydown", this.keyEvents);
   }

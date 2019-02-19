@@ -11,11 +11,13 @@ import * as serviceWorker from "./serviceWorker";
 function getParams(location) {
   const searchParams = new URLSearchParams(location.search);
   return {
+    autoplay: searchParams.get("autoplay") === "1",
     columns: searchParams.get("columns") || undefined,
     rows: searchParams.get("rows") || undefined
   };
 }
 // set values on constant
+const autoplay = getParams(window.location).autoplay;
 const columns = getParams(window.location).columns;
 const rows = getParams(window.location).rows;
 
@@ -24,6 +26,7 @@ ReactDOM.render(
     {/* add styled-normalize to reset dom css */}
     <Normalize />
     <Widget
+      autoplay={autoplay}
       columns={columns && Number(columns)}
       company={wttjContent.company}
       content={wttjContent.content}

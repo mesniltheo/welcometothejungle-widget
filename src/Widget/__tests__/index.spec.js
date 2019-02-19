@@ -13,16 +13,14 @@ const DEFAULT_PROPS = {
 
 const initInnerWidth = 1000;
 
+jest.useFakeTimers();
+
 /* Create event for touchStart and touchMove */
 function createClientXY(x, y) {
   return { clientX: x, clientY: y };
 }
 
 function createStartTouchEventObject({ x = 0, y = 0 }) {
-  return { touches: [createClientXY(x, y)] };
-}
-
-function createMoveTouchEventObject({ x = 0, y = 0 }) {
   return { touches: [createClientXY(x, y)] };
 }
 
@@ -127,12 +125,12 @@ describe("Widget", () => {
     });
   });
 
-  describe("handleNext", () => {
+  describe("slideNext", () => {
     it("should change state step", () => {
       const tree = shallow(<Widget {...DEFAULT_PROPS} />);
       tree.setState({ columnsResize: 3, step: 1, steps: 6 });
 
-      tree.instance().handleNext();
+      tree.instance().slideNext();
 
       expect(tree.state().step).toEqual(2);
     });
@@ -141,18 +139,18 @@ describe("Widget", () => {
       const tree = shallow(<Widget {...DEFAULT_PROPS} />);
       tree.setState({ columnsResize: 3, step: 3, steps: 6 });
 
-      tree.instance().handleNext();
+      tree.instance().slideNext();
 
       expect(tree.state().step).toEqual(3);
     });
   });
 
-  describe("handlePrev", () => {
+  describe("slidePrev", () => {
     it("should change state step", () => {
       const tree = shallow(<Widget {...DEFAULT_PROPS} />);
       tree.setState({ step: 5 });
 
-      tree.instance().handlePrev();
+      tree.instance().slidePrev();
 
       expect(tree.state().step).toEqual(4);
     });
@@ -161,9 +159,77 @@ describe("Widget", () => {
       const tree = shallow(<Widget {...DEFAULT_PROPS} />);
       tree.setState({ step: 0 });
 
-      tree.instance().handlePrev();
+      tree.instance().slidePrev();
 
       expect(tree.state().step).toEqual(0);
+    });
+  });
+
+  describe("handlePrev", () => {
+    it("should change state step", () => {
+      const tree = shallow(<Widget {...DEFAULT_PROPS} />);
+      const spySlidePrev = jest.spyOn(tree.instance(), "slidePrev");
+      const spyStopAutoplay = jest.spyOn(tree.instance(), "stopAutoplay");
+
+      tree.instance().handlePrev();
+
+      expect(spySlidePrev).toHaveBeenCalled();
+      expect(spyStopAutoplay).toHaveBeenCalled();
+    });
+  });
+
+  describe("handleNext", () => {
+    it("should change state step", () => {
+      const tree = shallow(<Widget {...DEFAULT_PROPS} />);
+      const spySlideNext = jest.spyOn(tree.instance(), "slideNext");
+      const spyStopAutoplay = jest.spyOn(tree.instance(), "stopAutoplay");
+
+      tree.instance().handleNext();
+
+      expect(spySlideNext).toHaveBeenCalled();
+      expect(spyStopAutoplay).toHaveBeenCalled();
+    });
+  });
+
+  describe("autoplay", () => {
+    it("should change to next step width autoplay", () => {
+      const spyInterval = jest.spyOn(window, "setInterval");
+      shallow(<Widget {...DEFAULT_PROPS} autoplay />);
+
+      // When I fast-forward time to 10000ms
+      jest.runTimersToTime(10000);
+
+      expect(spyInterval).toHaveBeenCalled();
+    });
+
+    it("should stop autoplay when handleNext called", () => {
+      const spySetInterval = jest.spyOn(window, "setInterval");
+      const spyClearInterval = jest.spyOn(window, "clearInterval");
+      const tree = shallow(<Widget {...DEFAULT_PROPS} autoplay />);
+
+      // When I fast-forward time to 10000ms
+      jest.runTimersToTime(10000);
+
+      expect(spySetInterval).toHaveBeenCalled();
+
+      tree.instance().handleNext();
+
+      expect(spyClearInterval).toHaveBeenCalled();
+    });
+
+    it("should stop autoplay when handlePrev called", () => {
+      const spySetInterval = jest.spyOn(window, "setInterval");
+      const spyClearInterval = jest.spyOn(window, "clearInterval");
+      const tree = shallow(<Widget {...DEFAULT_PROPS} autoplay />);
+
+      // When I fast-forward time to 10000ms
+      jest.runTimersToTime(10000);
+
+      expect(spySetInterval).toHaveBeenCalled();
+
+      tree.instance().handlePrev();
+
+      expect(spyClearInterval).toHaveBeenCalled();
     });
   });
 
