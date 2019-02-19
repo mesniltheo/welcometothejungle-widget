@@ -1,68 +1,100 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# WTTJ Widget
 
-## Available Scripts
+Création d'un widget pour les entreprises sur @wttj - Test technique
 
-In the project directory, you can run:
+Démo : [wttj.now.sh](https://wttj.now.sh) 👌
 
-### `npm start`
+Projet en React, avec [create react app](https://github.com/facebook/create-react-app) et [styled-components](https://github.com/styled-components/styled-components) 💅
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Installer le projet
 
-### `npm test`
+`yarn`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Lancer le projet
 
-### `npm run build`
+`yarn start`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+L'application est disponible en environement de développement ici : [http://localhost:3000](http://localhost:3000)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Lancer le build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`yarn build`
 
-### `npm run eject`
+Création du build de production dans le dossier `build`.<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Options
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### columns
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`https://wttj.now.sh/?columns=5`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Par défaut l'option est à 3, sur mobile (< 640px) l'option est toujours à 1.
 
-## Learn More
+### rows
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`https://wttj.now.sh/?rows=5`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Par défaut l'option est à 2.
 
-### Code Splitting
+### autoplay
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+`https://wttj.now.sh/?autoplay=1`
 
-### Analyzing the Bundle Size
+Par défaut l'option est à false dans le composant Widget, seul `1` est autorisé pour que l'option passe à true. L'autoplay s'arrête lorsque l'on swipe, que l'on utilise les keyEvents ou les 2 boutons dans le header.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### keyEvents
 
-### Making a Progressive Web App
+Le widget est compatible avec les touches flèche gauche et flèche droite du clavier
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Compatibilité
 
-### Advanced Configuration
+Compatible navigateurs firefox, chrome safari de la version actuelle à < 2, ainsi que Edge (pas de IE).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Développé en ES6 et transpillé par babel.
 
-### Deployment
+## Tests
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+### Lancer les tests
 
-### `npm run build` fails to minify
+`yarn test`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Le coverage minimal est de 90%. Pour tester le coverage `yarn coverage`.
+
+Testé avec `jest`, `enzyme` et `jest-styled-components`
+
+## Deploiement
+
+`yarn deploy`
+
+Pour la démo j'ai choisi `now.sh`, simple et rapide à mettre en place. Elle est disponible [ici](https://wttj.now.sh).
+
+## Structure
+
+L'application est basée sur react-create-app, c'est un choix pour rendre simple, rapide et stable la démo.
+
+Ce qui nous intéresse est dans le dossier `src` :
+
+- `assets` : j'y ai mis les assets de l'entreprise pour la démo, avec un logo et un json de configuration du widget. Il pourrait aussi y avoir toutes les assets globales de l'application, utlisées partout dans les pages.
+- `components` : les composants globaux seront ici, ils sont utilisés dans toute l'application _(sauf pour le cas de la démo n'ayant qu'une page)_, par exemple le composant **Button**, **Icon**, ... ce sont le plus souvent des composant dit "dumb component", sans logique.
+- `Widget`: je n'ai pas mis ici un dossier page, n'ayant pas mis en place de router. Le but était simplement de mettre un dossier Widget pour montrer la structure/découpe des composants. Le composant Widget à toute sa logique dans son **index.js**, d'autres sous-composants existent dans le dossier **components** afin de mieux découper et d'éviter un trop long code ainsi que de faciliter les tests unitaires. Les sous-composants ont beaucoup moins de logique voir dépouvus.
+- `index.js`: seulement pour la démo, c'est la base de l'application, je récupère les queryparams de l'url ici pour le donner au composant Widget.
+
+### Découpe d'un composant
+
+Un composant à comme base un `index.js`.
+
+Afin de créer des composants avec **styled-components**, et d'alléger l' index.js, je créé un fichier `styled.js` pour y mettre tous mes DOM elements et je les importent dans l' _index.js_.
+
+Dans les composants _styled_ on peut mettre en place des utilitaires `utils.js` qui permettent d'alléger le code et faciliter les tests _(exemple dans le composant Button)_.
+
+Si nous avons besoin de constants, un fichier `constants.js` sera créé.
+
+Vous trouverez les tests dans le dossier `__tests__`
+
+## Axes d'améliorations
+
+- rendre plus fluide le swipe, plus naturel par rapport au natif des téléphones
+- pouvoir agrandir les photos/vidéos et avoir un aperçu avant d'aller sur la page entreprise, cela dépends aussi de la statégie produit :)
+- on pourrait aussi proposer un widget adapté à leur charte graphique : couleur, typographie, arrondi...
