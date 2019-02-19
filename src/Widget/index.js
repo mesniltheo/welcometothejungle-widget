@@ -81,6 +81,7 @@ class Widget extends Component {
     const touchScrollRight = event.touches[0].clientX;
     const touchScrollDiff = touchScrollLeft - touchScrollRight;
 
+    // add 5 or remove 5 to avoid small swipe
     if (touchScrollDiff > 5) {
       this.handleNext();
       this.stopAutoplay();
@@ -97,6 +98,7 @@ class Widget extends Component {
     const { autoplay } = this.props;
 
     if (autoplay) {
+      // add an interval width slideNext
       this.autoplayInterval = setInterval(() => {
         this.slideNext();
       }, 3000);
@@ -121,11 +123,13 @@ class Widget extends Component {
 
   handlePrev = () => {
     this.slidePrev();
+    // stop autoplay to avoid scrolling glitch effects
     this.stopAutoplay();
   };
 
   handleNext = () => {
     this.slideNext();
+    // stop autoplay to avoid scrolling glitch effects
     this.stopAutoplay();
   };
 
@@ -164,6 +168,9 @@ class Widget extends Component {
       widthSlide
     } = this.state;
 
+    const progress = ((step + columnsResize) / steps) * 100;
+    const maxTep = steps - columnsResize;
+
     return (
       <S.Wrapper>
         <Header
@@ -172,7 +179,7 @@ class Widget extends Component {
           logo={logo}
           name={name}
           step={step}
-          maxStep={steps - columnsResize}
+          maxStep={maxTep}
         />
         <S.Slider
           onTouchStart={this.handleTouchStart}
@@ -188,7 +195,7 @@ class Widget extends Component {
             width={widthSlide}
           />
         </S.Slider>
-        <ProgressBar progress={((step + columnsResize) / steps) * 100} />
+        <ProgressBar progress={progress} />
         <Footer id={id} />
       </S.Wrapper>
     );
