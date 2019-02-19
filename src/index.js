@@ -8,18 +8,21 @@ import Widget from "./Widget";
 import * as serviceWorker from "./serviceWorker";
 
 // function to get params from url for the demo
-function getParams(location) {
-  const searchParams = new URLSearchParams(location.search);
-  return {
-    autoplay: searchParams.get("autoplay") === "1",
-    columns: searchParams.get("columns") || undefined,
-    rows: searchParams.get("rows") || undefined
-  };
+function getParams(name) {
+  const results = new RegExp("[?&]" + name + "=([^&#]*)").exec(
+    window.location.href
+  );
+  if (results == null) {
+    return null;
+  } else {
+    return decodeURI(results[1]) || 0;
+  }
 }
-// set values on constant
-const autoplay = getParams(window.location).autoplay;
-const columns = getParams(window.location).columns;
-const rows = getParams(window.location).rows;
+
+// set values on constants
+const autoplay = getParams("autoplay") === "1";
+const columns = getParams("columns") || undefined;
+const rows = getParams("rows") || undefined;
 
 ReactDOM.render(
   <div style={{ width: "100%", height: "100%", position: "absolute" }}>
