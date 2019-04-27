@@ -1,84 +1,85 @@
-import logoCompany from "./logo-wttj.png";
+import logoCompany from './logo-wttj.png'
+
+import picture1 from './pictures/1.jpg'
+import picture2 from './pictures/2.jpg'
+import picture3 from './pictures/3.jpg'
+import picture4 from './pictures/4.jpg'
+import picture5 from './pictures/5.jpg'
+import picture6 from './pictures/6.jpg'
+import picture7 from './pictures/7.jpg'
+import picture8 from './pictures/8.jpg'
+import picture9 from './pictures/9.jpg'
+import picture10 from './pictures/10.jpg'
+import picture11 from './pictures/11.jpg'
 
 export const config = {
   company: {
-    id: "wttj",
+    id: 'wttj',
     logo: logoCompany,
-    name: "Welcome to the jungle"
+    name: 'Welcome to the jungle',
   },
   content: [
     {
-      type: "video",
-      title: "Bertrand Uzeel",
-      subtitle: "Co-Founder",
-      caption:
-        "https://cdn.welcometothejungle.co/uploads/video/image/1480/151603/small_wttj_video_0679859b-6e84-4549-bbc4-1330eddcac57.jpg"
+      type: 'video',
+      title: 'Bertrand Uzeel',
+      subtitle: 'Co-Founder',
+      caption: picture1,
     },
     {
-      type: "picture",
-      caption:
-        "https://cdn.welcometothejungle.co/uploads/image/file/7269/151601/small_wttj-annonces_583853d2-7b7d-4827-beb6-005c9c814df7.jpg"
+      type: 'picture',
+      caption: picture2,
     },
     {
-      type: "picture",
-      caption:
-        "https://cdn.welcometothejungle.co/uploads/image/file/7220/151601/small_wttj-annonces_fde76898-d6a4-4540-af78-f26ec06ba201.jpg"
+      type: 'picture',
+      caption: picture3,
     },
     {
-      type: "quote",
-      text: "Life is short, work somewhere awesome."
+      type: 'quote',
+      text: 'Life is short, work somewhere awesome.',
     },
     {
-      type: "picture",
-      caption:
-        "https://cdn.welcometothejungle.co/uploads/image/file/7252/151601/small_wttj-jobs_b3bbd3a7-0c09-403a-a446-9f29d0b09c3f.jpg"
+      type: 'picture',
+      caption: picture4,
     },
     {
-      type: "video",
-      title: "Mélanie Babinot",
-      subtitle: "Sales Development Manager",
-      caption:
-        "https://cdn.welcometothejungle.co/uploads/video/image/9401/151602/small_wttj_video_3bbaeeb9-2f2f-4a1b-ac14-e6be495d3bb4.jpg"
+      type: 'video',
+      title: 'Mélanie Babinot',
+      subtitle: 'Sales Development Manager',
+      caption: picture5,
     },
     {
-      type: "picture",
-      caption:
-        "https://cdn.welcometothejungle.co/uploads/image/file/7266/151601/small_wttj-annonces_296b33a2-ae75-439f-82fa-25d75fff45ae.jpg"
+      type: 'picture',
+      caption: picture6,
     },
     {
-      type: "picture",
-      caption:
-        "https://cdn.welcometothejungle.co/uploads/image/file/7242/151601/small_wttj-inside_06571833-82ab-42e7-8fe2-0f004ecf79c8.jpg"
+      type: 'picture',
+      caption: picture7,
     },
     {
-      type: "quote",
-      text: "C’est pas faux !"
+      type: 'quote',
+      text: 'C’est pas faux !',
     },
     {
-      type: "video",
-      title: "Kevin Le Roy",
-      subtitle: "CTO",
-      caption:
-        "https://cdn.welcometothejungle.co/uploads/video/image/1540/151603/small_wttj_video_267f7b56-911e-4888-9721-085e83f9f479.jpg"
+      type: 'video',
+      title: 'Kevin Le Roy',
+      subtitle: 'CTO',
+      caption: picture8,
     },
     {
-      type: "picture",
-      caption:
-        "https://cdn.welcometothejungle.co/uploads/image/file/7223/151601/small_wttj-jobs_360f6eb8-26e1-42aa-a3ee-837c3767b734.jpg"
+      type: 'picture',
+      caption: picture9,
     },
     {
-      type: "video",
-      title: "Anne-Claire",
-      subtitle: "Head of production",
-      caption:
-        "https://cdn.welcometothejungle.co/uploads/video/image/1702/151603/small_wttj_video_c9575808-fd3a-4571-95ef-873af73be887.jpg"
+      type: 'video',
+      title: 'Anne-Claire',
+      subtitle: 'Head of production',
+      caption: picture10,
     },
     {
-      type: "picture",
-      caption:
-        "https://cdn.welcometothejungle.co/uploads/image/file/7206/151601/small_wttj-offres-emploi_170aa579-aa26-4cf8-838c-9d68d4da6c32.jpg"
-    }
-  ]
-};
+      type: 'picture',
+      caption: picture11,
+    },
+  ],
+}
 
-export default config;
+export default config
